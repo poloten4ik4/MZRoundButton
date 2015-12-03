@@ -11,13 +11,14 @@
 typedef NS_ENUM(NSUInteger, buttonStyle) {
     kMZButtonStyleCall,
     kMZButtonStyleCancel,
-    kMZButtonStyleCallToDispetcher,
+    kMZButtonStyleCallCenter,
     kMZButtonStyleLetsGo
 };
 
 IB_DESIGNABLE
 @interface MZRoundButton : UIButton
 
+@property (nonatomic) BOOL showsActivityIndicator;
 @property (nonatomic, assign) IBInspectable NSString* text;
 @property (nonatomic, assign) IBInspectable UIColor* buttonColor;
 #if TARGET_INTERFACE_BUILDER

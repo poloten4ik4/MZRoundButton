@@ -17,33 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-nj-WEW" customClass="MZRoundButton">
-                                <rect key="frame" x="211" y="343" width="89" height="129"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm7-Ad-cgU" customClass="MZRoundButton">
+                                <rect key="frame" x="20" y="368" width="85" height="104"/>
                                 <animations/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm7-Ad-cgU" customClass="MZRoundButton">
-                                <rect key="frame" x="20" y="343" width="129" height="129"/>
-                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="5kZ-sC-PcR"/>
+                                    <constraint firstAttribute="width" constant="85" id="RNi-4n-1Uu"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="style">
                                         <integer key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-nj-WEW" customClass="MZRoundButton">
+                                <rect key="frame" x="205" y="368" width="85" height="104"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="5zP-UT-oOy"/>
+                                    <constraint firstAttribute="height" constant="104" id="uWZ-kK-ZSg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.47999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZSl-nj-WEW" secondAttribute="trailing" constant="30" id="Nrq-vo-tc8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZSl-nj-WEW" secondAttribute="bottom" constant="8" id="ZpK-NS-RQY"/>
+                            <constraint firstItem="cm7-Ad-cgU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vsd-An-YTV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cm7-Ad-cgU" secondAttribute="bottom" constant="8" id="xGP-MS-w3d"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="acceptButton" destination="cm7-Ad-cgU" id="4mO-8h-Mbp"/>
+                        <outlet property="cancelButton" destination="ZSl-nj-WEW" id="S83-1g-Tpb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776" y="309"/>
+            <point key="canvasLocation" x="497" y="335"/>
         </scene>
     </scenes>
 </document>
