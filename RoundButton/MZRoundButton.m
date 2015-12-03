@@ -8,8 +8,8 @@
 
 #import "MZRoundButton.h"
 
-const NSInteger kDefaultCenterRoundedViewSideSize = 56;
-const NSInteger kDefaultImageViewSize = 35;
+const NSInteger kDefaultCenterRoundedViewSideSize = 57;
+const NSInteger kDefaultImageViewSize = 38;
 const NSInteger kDefaultLabelHeight = 30;
 
 #define kCallFillColor [UIColor greenColor];
@@ -132,6 +132,7 @@ const NSInteger kDefaultLabelHeight = 30;
         self.buttonLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(frame)-kDefaultLabelHeight, CGRectGetWidth(frame), kDefaultLabelHeight)];
         self.buttonLabel.textAlignment= NSTextAlignmentCenter;
         self.buttonLabel.text=self.text;
+        self.buttonLabel.font=[UIFont fontWithName:@"Helvetica-Light" size:16];
         [self addSubview:self.buttonLabel];
     }
     //buttonRoundView
